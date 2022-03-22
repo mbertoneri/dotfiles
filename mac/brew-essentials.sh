@@ -43,6 +43,7 @@ brew install sublime-text
 brew install --cask jetbrains-toolbox
 brew install --cask 1password
 brew install --cask bitwarden
+brew install --cask rectangle
 
 
 # Restore plists of apps

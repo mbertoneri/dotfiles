@@ -43,6 +43,7 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install youtube-dl
+brew install exa
 
 # Install for dev
 brew install php@8.1
