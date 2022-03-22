@@ -15,12 +15,12 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Set computer name (as done via System Preferences → Sharing)
 sudo scutil --set ComputerName "Zell's Macbook"
-sudo scutil --set HostName "Zell's Macbook"
-sudo scutil --set LocalHostName "zells-macbook"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Zell's Macbook"
+sudo scutil --set HostName "Mac-mini-de-Michael"
+sudo scutil --set LocalHostName "Mac-mini-de-Michael"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Mac-mini-de-Michael"
 
 # Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
+#sudo nvram SystemAudioVolume=" "
 
 # Set highlight color to green
 # defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
@@ -185,7 +185,7 @@ defaults write com.apple.screencapture disable-shadow -bool true
 defaults write NSGlobalDomain AppleFontSmoothing -int 1
 
 # Enable HiDPI display modes (requires restart)
-sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+#sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
 ###############################################################################
 # Finder                                                                      #
@@ -292,8 +292,8 @@ chflags nohidden ~/Library
 sudo chflags nohidden /Volumes
 
 # Remove Dropbox’s green checkmark icons in Finder
-file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
-[ -e "${file}" ] && mv -f "${file}" "${file}.bak"
+#file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
+#[ -e "${file}" ] && mv -f "${file}" "${file}.bak"
 
 # Expand the following File Info panes:
 # “General”, “Open with”, and “Sharing & Permissions”
@@ -329,7 +329,7 @@ defaults write com.apple.dock show-process-indicators -bool true
 defaults write com.apple.dock persistent-apps -array
 
 # Show only open applications in the Dock
-#defaults write com.apple.dock static-only -bool true
+defaults write com.apple.dock static-only -bool true
 
 # Don’t animate opening applications from the Dock
 defaults write com.apple.dock launchanim -bool false

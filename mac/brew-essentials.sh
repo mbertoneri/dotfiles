@@ -1,3 +1,7 @@
+#install Xcode Command Line Tools
+echo "Installing Xcode command line tools"
+xcode-select --install
+
 # Install Homebrew (if not installed)
 echo "Installing Homebrew."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -21,21 +25,25 @@ brew install dropbox
 brew install google-backup-and-sync
 brew install google-chrome #Chrome
 brew install google-drive
-brew install homebrew/cask-versions/firefox-nightly # Nightly
-brew install homebrew/cask-versions/google-chrome-canary # Chrome Canary
+#brew install homebrew/cask-versions/firefox-nightly # Nightly
+#brew install homebrew/cask-versions/google-chrome-canary # Chrome Canary
 brew install iterm2
 brew install kap
-brew install mongodb-compass
+#brew install mongodb-compass
 brew install notion
 brew install signal
 brew install sketch
 brew install slack
 brew install spotify
 brew install textexpander
-brew install tower
+#brew install tower
 brew install visual-studio-code
 brew install whatsapp
-brew install zoom
+brew install sublime-text
+brew install --cask jetbrains-toolbox
+brew install --cask 1password
+brew install --cask bitwarden
+
 
 # Restore plists of apps
 mackup restore

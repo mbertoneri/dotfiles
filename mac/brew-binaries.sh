@@ -1,11 +1,6 @@
 #!/usr/bin/env bash
 # Installs binaries that are useful, but not essential for initial computer setup
 
-# Install and setup Mongodb
-brew tap mongodb/brew
-brew install mongodb-community
-sudo mkdir -p /System/Volumes/Data/data/db
-sudo chown -R `id -un` /System/Volumes/Data/data/db
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -48,6 +43,10 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install youtube-dl
+
+# Install for dev
+brew install php@8.1
+
 
 # Remove outdated versions from the cellar.
 brew cleanup
