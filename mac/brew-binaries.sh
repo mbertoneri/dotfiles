@@ -44,6 +44,7 @@ brew install tree
 brew install vbindiff
 brew install youtube-dl
 brew install exa
+brew install bat
 
 # Install for dev
 brew install php@8.1

@@ -104,3 +104,23 @@ function savebatt() {
 alias mongod='brew services run mongodb-community'
 alias mongod-status='brew services list'
 alias mongod-stop='brew services stop mongodb-community'
+
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+alias ls='ls -lGH'
+alias ll='exa -l'
+alias sf='symfony'
+alias sfc='symfony console'
+alias cat='bat'
+alias zshcfg='source ~mbertoneri/.zshrc'
+
+#easyblue
+alias tf='docker exec -it api ./vendor/bin/simple-phpunit --bootstrap tests/bootstrap.functional.php tests/Functional --testdox'
+alias tfu='docker exec api ./vendor/bin/simple-phpunit --bootstrap tests/bootstrap.unit.php tests/Functional --testdox'
+alias ti='docker exec -it api ./vendor/bin/simple-phpunit --bootstrap tests/bootstrap.integration.php tests/Integration --testdox'
+alias tiu='docker exec api ./vendor/bin/simple-phpunit --bootstrap tests/bootstrap.unit.php tests/Integration --testdox'
+alias tu='docker exec -it api ./vendor/bin/simple-phpunit --bootstrap tests/bootstrap.unit.php tests/Unit --testdox'
+#end easyblue
