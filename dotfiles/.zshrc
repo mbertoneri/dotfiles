@@ -10,11 +10,22 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 plugins=(brew capistrano colored-man-pages colorize command-not-found common-aliases composer docker docker-compose emoji fancy-ctrl-z git git-auto-fetch git-extras git-prompt gitignore gpg-agent history history-substring-search iterm2 node npm macos rsync sudo vi-mode vim-interaction yarn z zsh-autosuggestions zsh-syntax-highlighting kubectl)
 
 source $ZSH/oh-my-zsh.sh
+
+
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     MACHINE=Linux;;
+    Darwin*)    MACHINE=Mac;;
+    CYGWIN*)    MACHINE=Cygwin;;
+    MINGW*)     MACHINE=MinGw;;
+    *)          MACHINE="UNKNOWN:${unameOut}"
+esac
+export MACHINE
 
 # User configuration
 ulimit -n 5000
