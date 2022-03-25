@@ -45,4 +45,9 @@ elif [[ "$MACHINE" == "Mac" ]]; then
   source "$PROJECT_ROOT/env/exports.sh"
   source "$PROJECT_ROOT/env/functions.sh"
 fi
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+eval "$(starship init zsh)"

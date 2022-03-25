@@ -31,7 +31,7 @@ export MANPAGER='less -X';
 export GPG_TTY=$(tty);
 
 #Mac M1
-PATH="/opt/homebrew/bin":${PATH}
+PATH="/usr/local/bin:/opt/homebrew/sbin:/opt/homebrew/bin":${PATH}
 
 #nvm
 export NVM_DIR="$HOME/.nvm"
