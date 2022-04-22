@@ -118,9 +118,10 @@ alias cat='bat'
 alias zshcfg='source ~mbertoneri/.zshrc'
 
 #easyblue
-alias tf='docker exec -it api ./vendor/bin/simple-phpunit --bootstrap tests/bootstrap.functional.php tests/Functional --testdox'
-alias tfu='docker exec api ./vendor/bin/simple-phpunit --bootstrap tests/bootstrap.unit.php tests/Functional --testdox'
-alias ti='docker exec -it api ./vendor/bin/simple-phpunit --bootstrap tests/bootstrap.integration.php tests/Integration --testdox'
-alias tiu='docker exec api ./vendor/bin/simple-phpunit --bootstrap tests/bootstrap.unit.php tests/Integration --testdox'
-alias tu='docker exec -it api ./vendor/bin/simple-phpunit --bootstrap tests/bootstrap.unit.php tests/Unit --testdox'
+# alias tf='docker exec -it api ./vendor/bin/simple-phpunit --bootstrap tests/bootstrap.functional.php tests/Functional --testdox'
+# alias tfu='docker exec api ./vendor/bin/simple-phpunit --bootstrap tests/bootstrap.unit.php tests/Functional --testdox'
+# alias ti='docker exec -it api ./vendor/bin/simple-phpunit --bootstrap tests/bootstrap.integration.php tests/Integration --testdox'
+# alias tiu='docker exec api ./vendor/bin/simple-phpunit --bootstrap tests/bootstrap.unit.php tests/Integration --testdox'
+# alias tu='docker exec -e KEEP_TEST_ENV=1 api php ./vendor/bin/simple-phpunit --testdox tests/Unit'
+alias tfkc='docker exec -e KEEP_TEST_ENV=1 api php ./vendor/bin/simple-phpunit --testdox tests/Functional'
 #end easyblue

@@ -30,8 +30,13 @@ export MANPAGER='less -X';
 # https://stackoverflow.com/a/42265848/96656
 export GPG_TTY=$(tty);
 
-#Mac M1
+#Mac M1 homebrew
 PATH="/usr/local/bin:/opt/homebrew/sbin:/opt/homebrew/bin":${PATH}
+#end M1
+PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
+export PATH
+
 
 #nvm
 export NVM_DIR="$HOME/.nvm"
