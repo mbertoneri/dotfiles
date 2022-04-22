@@ -1,3 +1,7 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -12,7 +16,8 @@ ZSH_THEME="robbyrussell"
 
 #source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-plugins=(brew capistrano colored-man-pages colorize command-not-found common-aliases composer docker docker-compose emoji fancy-ctrl-z git git-auto-fetch git-extras git-prompt gitignore gpg-agent history history-substring-search iterm2 node npm macos rsync sudo vi-mode vim-interaction yarn z zsh-autosuggestions zsh-syntax-highlighting kubectl)
+# plugins=(brew capistrano colored-man-pages colorize command-not-found common-aliases composer docker docker-compose emoji fancy-ctrl-z git git-auto-fetch git-extras git-prompt gitignore gpg-agent history history-substring-search iterm2 node npm macos rsync sudo vi-mode vim-interaction yarn z zsh-autosuggestions zsh-syntax-highlighting kubectl )
+plugins=(brew capistrano colored-man-pages colorize command-not-found common-aliases composer docker docker-compose emoji fancy-ctrl-z git git-auto-fetch git-extras git-prompt gitignore history history-substring-search iterm2 yarn z zsh-autosuggestions zsh-syntax-highlighting kubectl autojump)
 
 source $ZSH/oh-my-zsh.sh
 
