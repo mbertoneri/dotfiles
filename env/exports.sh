@@ -31,9 +31,10 @@ export MANPAGER='less -X';
 export GPG_TTY=$(tty);
 
 #Mac M1 homebrew
-PATH="/usr/local/bin:/opt/homebrew/sbin:/opt/homebrew/bin":${PATH}
-#end M1
+PATH="/usr/local/bin:/opt/homebrew/sbin:/opt/homebrew/bin:":${PATH}
 PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+#end M1
 
 export PATH
 
