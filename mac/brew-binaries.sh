@@ -19,7 +19,7 @@ brew install mkcert
 brew install nss
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 brew install gmp
 brew install grep
@@ -48,7 +48,8 @@ brew install bat
 
 # Install for dev
 brew install php@8.1
-
+brew install libpq
+brew link --force libpq
 
 # Remove outdated versions from the cellar.
 brew cleanup
