@@ -116,7 +116,7 @@ alias sf='symfony'
 alias sfc='symfony console'
 alias cat='bat'
 alias zshcfg='source ~mbertoneri/.zshrc'
-alias gcd=‘echo “WTF (ノಠ益ಠ)ノ彡┻━┻!“’
+alias gcd=‘echo “WTF“’
 
 #easyblue
 # alias tf='docker exec -it api ./vendor/bin/simple-phpunit --bootstrap tests/bootstrap.functional.php tests/Functional --testdox'
