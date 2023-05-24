@@ -45,6 +45,9 @@ brew install vbindiff
 brew install youtube-dl
 brew install exa
 brew install bat
+# https://github.com/ellie/atuin
+brew install atuin
+brew install starship
 
 # Install for dev
 brew install php@8.1

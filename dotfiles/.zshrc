@@ -56,6 +56,7 @@ fi
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 eval "$(starship init zsh)"
+eval "$(atuin init zsh)"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/mbertoneri/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mbertoneri/google-cloud-sdk/path.zsh.inc'; fi
