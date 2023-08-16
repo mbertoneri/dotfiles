@@ -45,6 +45,8 @@ if [[ "$MACHINE" == "Linux" ]];then
   source "$PROJECT_ROOT/env/functions.sh"
 elif [[ "$MACHINE" == "Mac" ]]; then
   PROJECT_ROOT='/Users/mbertoneri/dev/dotfiles'
+  PROJECT_ROOT="$PWD/dev/personal/dotfiles"
+  echo $PROJECT_ROOT >> /tmp/alias.txt
   source "$PROJECT_ROOT/env/aliases-shared.sh"
   source "$PROJECT_ROOT/env/aliases-mac.sh"
   source "$PROJECT_ROOT/env/exports.sh"
@@ -58,10 +60,10 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 eval "$(starship init zsh)"
 eval "$(atuin init zsh)"
 
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/mbertoneri/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mbertoneri/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/mbertoneri/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mbertoneri/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/mbertoneri/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mbertoneri/google-cloud-sdk/completion.zsh.inc'; fi
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+if [ -f '/Users/mbertoneri/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mbertoneri/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
