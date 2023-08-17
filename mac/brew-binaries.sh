@@ -48,11 +48,21 @@ brew install bat
 # https://github.com/ellie/atuin
 brew install atuin
 brew install starship
+brew tap ferdium/ferdium
+brew install ferdium
+
 
 # Install for dev
-brew install php@8.1
+brew install php
 brew install libpq
 brew link --force libpq
+brew install httpie
+
+#vnm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
+nvm install --lts
+npm install --global yarn
+
 
 # Remove outdated versions from the cellar.
 brew cleanup

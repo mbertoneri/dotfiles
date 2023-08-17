@@ -45,10 +45,13 @@ style = "bright-white"
 format = "$all_status$ahead_behind"
 
 [hostname]
-ssh_only = false
+ssh_only = true
 format = "<[$hostname]($style)>"
 trim_at = "-"
 style = "bold dimmed white"
+disabled = true
+
+[docker_context]
 disabled = true
 
 [julia]
