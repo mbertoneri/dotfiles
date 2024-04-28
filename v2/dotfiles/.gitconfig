@@ -1,0 +1,15 @@
+# Ceci est le fichier de configuration personnel de Git.
+[user]
+# Veuillez adapter et décommenter les lignes suivantes :
+	name = mbertoneri
+	email = michael.bertoneri@gmail.com
+[core]
+	autocrlf = input
+	excludesfile = ~/.gitignore
+[credential]
+	helper = osxkeychain
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f

@@ -1,0 +1,24 @@
+[font]
+size = 24.0
+#use_thin_strokes = true
+
+[font.bold]
+family = "Hack Nerd Font Mono"
+
+[font.italic]
+family = "Hack Nerd Font Mono"
+
+[font.normal]
+family = "Hack Nerd Font Mono"
+
+[font.offset]
+x = 0
+y = 5
+
+[window]
+#decorations = "Buttonless"
+decorations = "full"
+
+[window.padding]
+x = 0
+y = 0

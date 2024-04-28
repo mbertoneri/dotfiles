@@ -1,0 +1,55 @@
+# default layout (can be bsp, stack or float)
+yabai -m config layout bsp
+
+
+# Set all padding and gaps to 20pt (default: 0)
+yabai -m config top_padding    0
+yabai -m config bottom_padding 0
+yabai -m config left_padding   0
+yabai -m config right_padding  0
+yabai -m config window_gap     5 
+
+
+# -- mouse settings --
+
+# center mouse on window with focus
+yabai -m config mouse_follows_focus on
+
+# modifier for clicking and dragging with mouse
+yabai -m config mouse_modifier alt
+# set modifier + left-click drag to move window
+yabai -m config mouse_action1 move
+# set modifier + right-click drag to resize window
+yabai -m config mouse_action2 resize
+
+# when window is dropped in center of another window, swap them (on edges it will split it)
+yabai -m mouse_drop_action swap
+
+
+# float system preferences
+yabai -m rule --add app='^Finder$' manage=off
+yabai -m rule --add app='^Activity Monitor$' manage=off
+yabai -m rule --add app='^System Information$' manage=off
+yabai -m rule --add app='^System Preferences$' manage=off
+yabai -m rule --add app='^System Settings$' manage=off
+yabai -m rule --add app='^Podcasts$' manage=off
+yabai -m rule --add app='^Karabiner$' manage=off
+yabai -m rule --add app='^Postgres$' manage=off
+yabai -m rule --add app='^Docker$' manage=off
+yabai -m rule --add title='Preferences$' manage=off
+yabai -m rule --add title='Sign in - Google Accounts$' manage=off
+yabai -m rule --add app='Acrobat Reader' manage=off
+yabai -m rule --add app='Context' manage=off
+yabai -m rule --add app='^OpenVPN$' manage=off
+yabai -m rule --add app='^1Passowrd$' manage=off
+yabai -m rule --add app='^Notes$' manage=off
+
+yabai -m rule --add title='Settings$' manage=off
+
+# Some Goland settings, in case you are using it. float Goland Preference panes
+yabai -m rule --add app='^GoLand$' title='^$' manage=off
+yabai -m rule --add app='^GoLand$' title='Project Structure' manage=off
+yabai -m rule --add app='^GoLand$' title='Preferences' manage=off
+yabai -m rule --add app='^GoLand$' title='Edit configuration' manage=off
+yabai -m rule --add app='^GoLand$' title='^Commit$' manage=off
+
