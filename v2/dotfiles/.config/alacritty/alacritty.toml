@@ -18,6 +18,8 @@ y = 5
 [window]
 #decorations = "Buttonless"
 decorations = "full"
+opacity = 0.6
+blur = true
 
 [window.padding]
 x = 0
