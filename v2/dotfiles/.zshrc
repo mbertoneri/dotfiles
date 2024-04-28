@@ -123,8 +123,10 @@ alias do_source='source ~/.zshrc'
 bindkey "^[f" forward-word
 bindkey "^[b" backward-word
 # ctrl+<- | ctrl+->
-bindkey "^[[1;5D" backward-word
-bindkey "^[[1;5C" forward-word
+#bindkey "^[[1;5D" backward-word
+#bindkey "^[[1;5C" forward-word
+bindkey "^[[1;3C" forward-word
+bindkey "^[[1;3D" backward-word
 
 # ---- FZF -----
 
@@ -159,7 +161,7 @@ _fzf_compgen_dir() {
   fd --type=d --hidden --exclude .git . "$1"
 }
 
-source .fzf-git.sh
+source ~/.fzf-git.sh
 
 export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
 export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
@@ -198,6 +200,8 @@ eval "$(zoxide init zsh)"
 
 alias cd="z"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
