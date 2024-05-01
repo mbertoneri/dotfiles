@@ -82,4 +82,4 @@ hyper - f : open /Applications/Alacritty.app
 #hyper - g : open /Applications/Notion.app
 # hyper - c : open /Applications/Things3.app
 
-[[ -f ~/.config/skhd.local ]] && source ~/.config/skhd.local 
+.load ~/.config/skhd.local 
